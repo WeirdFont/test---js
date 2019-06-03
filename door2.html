@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </head>
+  <body style="margin:0">
+    <div class="start mx-auto mt-5 col-6" style="display: flex;">
+      <div class="col-3">
+          <img src="door.png" class="ml-5 door w-100">
+      </div>
+      <div class="col-3">
+        <img src="door2.png" class="ml-5 door2 w-100">
+      </div>
+      <div class="col-3">
+        <img src="door3.png" class="ml-5 door3 w-100">        
+      </div>
+    </div>
+    <div style="height: 1000px; background: black; display: none;" class="garri">
+
+          <div class="veshi">
+            <h1 class="text-white">Найдите три вещи из Гарри Поттера <span class="score_block">0</span>/3</h1>
+           <a href="" class="btn">
+            <button class="btn text-white">Выйти из игры</button>
+        </a>
+        </div>
+        <div style="margin-left: 100px; margin-top: 250px; display: none; position: absolute;" class="metla">
+          <img src="metla.png" style="width: 100px;">
+        </div>
+        <div style="margin-left: 560px; margin-top: 720px; display: none; position: absolute;" class="mantiya">
+          <img src="mantiya.png" style="width: 100px;">
+        </div>
+        <div style="margin-left: 440px; margin-top: 150px; display: none; position: absolute;" class="palochka">
+          <img src="palochka.png" style="width: 100px;">
+        </div>
+        <div style="margin-left: 740px; margin-top: 430px; display: none; position: absolute;" class="gun">
+          <img src="gun.png" style="width: 100px;">
+        </div>
+        <div style="margin-left: 1100px; margin-top: 710px; display: none; position: absolute;" class="ring">
+          <img src="ring.png" style="width: 100px;">
+        </div>
+
+    </div>
+    <script type="text/javascript">
+      let point = 0;
+      document.querySelector('.door').onclick = function(){
+        document.querySelector('.garri').style.display='block';
+        document.querySelector('.start').style.display='none';
+        document.querySelector('.metla').style.display='block';
+        document.querySelector('.mantiya').style.display='block';
+        document.querySelector('.palochka').style.display='block';
+        document.querySelector('.gun').style.display='block';
+        document.querySelector('.ring').style.display='block';
+      }
+      document.querySelector('.metla').onclick = function(){
+        document.querySelector('.metla').style.display = 'none';
+        point = point + 1;
+        document.querySelector('.score_block').innerHTML = point;
+      }
+      document.querySelector('.mantiya').onclick = function(){
+        document.querySelector('.mantiya').style.display = 'none';
+        point = point + 1;
+        document.querySelector('.score_block').innerHTML = point;
+      }
+      document.querySelector('.palochka').onclick = function(){
+        document.querySelector('.palochka').style.display = 'none';
+        point = point + 1;
+        document.querySelector('.score_block').innerHTML = point;
+      }
+      document.querySelector('.gun').onclick = function(){
+        alert('u a retard?')
+        document.querySelector('.garri').style.display='none';
+      }
+      document.querySelector('.ring').onclick = function(){
+        alert('u a retard?')
+        document.querySelector('.garri').style.display='none';
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
